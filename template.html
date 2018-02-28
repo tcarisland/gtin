@@ -1,0 +1,31 @@
+<form id="gtin_form" onsubmit="search_gtin()">
+    <input id="searchfield" type="text" size="30" autocomplete="off" id="gtin_form">
+    <div>
+        <input type="radio" id="field1"
+               name="field" value="GTIN_CD"
+               checked="checked    ">
+        <label for="field1">GTIN Number</label>
+        <br>
+        <input type="radio" id="field2"
+               name="field" value="BRAND_NM">
+        <label for="field2">Brand</label>
+        <br>
+        <input type="radio" id="field3"
+               name="field" value="GTIN_NM">
+        <label for="field3">Product Name</label>
+    </div>
+</form>
+<br>
+<span id="searchbutton" style="
+border-style: solid;
+border-color: black;
+border-width: 1px;
+display: block;
+padding: .5em .5em .5em .5em;
+cursor: pointer;
+width: 140px;" onclick="search_gtin()">
+    Search GTIN
+</span>
+<br>
+<div id="gtin_data"></div>
+<br>
