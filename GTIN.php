@@ -9,8 +9,6 @@ Author URI: http://www.tcarisland.com
 License: Free for personal use
 */
 
-require_once "sqlfunctions.php";
-
 add_action( 'wp_enqueue_scripts', 'gtin_deps' );
 
 function get_gtin() {
